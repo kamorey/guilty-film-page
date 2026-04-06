@@ -21,7 +21,7 @@ html{
     position:fixed; 
     top: 5px;
     left: 5px;
-    font-size: 50px;
+    font-size: 75px;
     cursor: pointer;
     z-index: 999;
 }
