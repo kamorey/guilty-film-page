@@ -9,6 +9,14 @@ html{
     z-index: 100;
     position: relative;
 }
+
+p{     
+    font-family: "playfair-display", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
 .main-nav{ 
     background: #ed1c24;
     color: rgb(0, 0, 0);
@@ -21,7 +29,7 @@ html{
     position:fixed; 
     top: 5px;
     left: 5px;
-    font-size: 75px;
+    font-size: 50px;
     cursor: pointer;
     z-index: 999;
 }
@@ -32,7 +40,7 @@ html{
     left: 0;
     width: 250px;
     height: 100vh;
-    background: #000;
+    background: #212121;
     color: #ed1c24;
     padding: 15px 3px;
     transform: translateX(-100%);
@@ -41,6 +49,7 @@ html{
     flex-direction: column;
     justify-content: center;
     z-index: 998;
+    opacity: 85%;
     }
 
 #nav-toggle:checked ~ .main-nav {
@@ -86,7 +95,9 @@ a:hover{
     font-weight: 400;
     font-style: normal;
     text-align: end;
-    font-size: 50px;
+    font-size: 70px;
+    padding:20px;
+    margin-bottom: 0;
 }
 
 input[type="radio"]{display: none;}
@@ -147,6 +158,53 @@ input[type="radio"]{display: none;}
 #s2:checked ~ .carousel .dots .dot2,
 #s3:checked ~ .carousel .dots .dot3,
 #s4:checked ~ .carousel .dots .dot4
+
 {background: 
     #ed1c24; 
     transform: scale(1.3);}
+
+
+.container{ 
+    display: flex;
+    gap:15px;
+    flex-wrap: nowrap;
+    padding: 20px;
+}
+
+.about-film-blurb{
+    color: #ed1c24;
+    line-height: 3;
+    font-weight: 800;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.container1{
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top:15px;
+}
+
+
+.card{ 
+    height: 200px;
+    flex:1;
+    transition: .7s ease-in-out;
+    box-shadow: 0 0 25px #fdfdfd;
+}
+
+.card:hover{
+    flex: 3;
+    box-shadow: 0 0 10px #ed1c24;
+}
+
+.card img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    box-shadow: 0 0 25px #fdfdfd;
+}
