@@ -338,14 +338,6 @@ input[type="radio"]{display: none;}
     box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
-.video-wrapper{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 2rem 0;
-}
-
 .poster{
     box-shadow: 0 0 25px #fdfdfd;
     margin: auto;
@@ -371,4 +363,22 @@ input[type="radio"]{display: none;}
     margin: 0;
     line-height: 1.6;
     flex:1;
+}
+
+.contact{ 
+    border: #ed1c24;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #fdfdfd;
+    align-items: center;
+}
+
+.film{
+    max-width: 900px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    align-items: center;
 }
