@@ -351,5 +351,14 @@ input[type="radio"]{display: none;}
     margin: auto;
     width: 500px;
     height: auto;
-    padding: 10px;
+    padding: 0px;
+    gap:10px;
+}
+
+.poster-caption{
+    font-family: "playfair-display", serif;
+    font-size: 15px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
 }
