@@ -349,7 +349,7 @@ input[type="radio"]{display: none;}
 .poster{
     box-shadow: 0 0 25px #fdfdfd;
     margin: auto;
-    width: 500px;
+    max-width: 500px;
     height: auto;
     padding: 0px;
     gap:10px;
