@@ -149,6 +149,48 @@ input[type="radio"]{display: none;}
 #s4:checked~ .carousel .slides{
     transform: translateX(-75%) ;}
 
+.arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.arrow {
+    background: #212121;
+    color: #ed1c24;
+    font-size: 30px;
+    padding: 10px 15px;
+    cursor: pointer;
+    pointer-events: all;
+    transition: background 0.3s ease;
+    user-select: none;
+    border-radius: 50%;
+}
+
+.arrow:hover {
+    background: #ed1c24;
+    color: white;
+}
+
+.arrow { display: none; }
+
+/* show only the correct arrows per active slide */
+#s1:checked ~ .carousel .s1-left,
+#s1:checked ~ .carousel .s1-right { display: block; }
+
+#s2:checked ~ .carousel .s2-left,
+#s2:checked ~ .carousel .s2-right { display: block; }
+
+#s3:checked ~ .carousel .s3-left,
+#s3:checked ~ .carousel .s3-right { display: block; }
+
+#s4:checked ~ .carousel .s4-left,
+#s4:checked ~ .carousel .s4-right { display: block; }
+
 .dots{
     display: flex;
     justify-content: center;
