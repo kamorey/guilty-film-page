@@ -1,7 +1,7 @@
 html{
     background-color: rgb(0, 0, 0);
     color: #ed1c24;
-    padding:30px;
+    padding:10px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -10,7 +10,7 @@ html{
     position: relative;
 }
 
-.words{     
+.words,p{     
     font-family: "playfair-display", serif;
     font-weight: 600;
     font-style: normal;
@@ -32,6 +32,12 @@ html{
     font-size: 50px;
     cursor: pointer;
     z-index: 999;
+}
+
+.main-nav ul{ 
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .main-nav{
@@ -72,6 +78,11 @@ a:hover{
     text-decoration: line-through;
 }
 
+a{ 
+    color: #ed1c24;
+    text-decoration: none;
+}
+
 .background-video{ 
     position: fixed;
     right:0;
@@ -98,6 +109,7 @@ a:hover{
     font-size: 70px;
     padding:20px;
     margin-bottom: 0;
+    font-size:clamp(35px,6vw,70px);
 }
 
 input[type="radio"]{display: none;}
@@ -173,7 +185,7 @@ input[type="radio"]{display: none;}
 
 .about-film-blurb{
     color: #ed1c24;
-    line-height: 3;
+    line-height: 1.5;
     font-weight: 800;
     display: flex;
     margin: auto;
@@ -207,4 +219,120 @@ input[type="radio"]{display: none;}
     height:100%;
     object-fit: cover;
     box-shadow: 0 0 25px #fdfdfd;
+}
+
+.cast-blurb{
+  display: flex;
+  flex-direction: row; 
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.cast-title{
+  font-family: "above-the-beyond", cursive;
+  font-size: clamp(40px,10vw,40px);
+  color: #ed1c24;
+  margin: 0 0 10px 0;
+  line-height: 1;
+}
+
+.image-wrapper{
+    position: relative;
+    width: clamp(200px,30vw,400px);
+}
+
+.image{
+    width: 100%;
+    height:auto;
+    object-fit: cover;
+    display: block;
+}
+.name{ 
+    position:absolute;
+    font-family: "above-the-beyond", script;
+    font-weight: 400;
+    width:100%;
+    bottom: 0;
+    left:0;
+    font-size: clamp(20px,3vw,40px);
+    margin: 0;
+    padding: 10px;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 280px;
+  text-align: right;
+}
+
+.about-title{
+    font-family: "above-the-beyond",script;
+    font-size: clamp(50px,8vx,100px);
+    color: #ed1c24;
+    margin: 0 0 20px 0;
+    text-align: right;
+    line-height: 1;
+}
+
+.caption{
+    color: #fdfdfd;
+    font-family: "playfair-display", serif;
+    font-size: 20px;
+    line-height: 1.6;
+    padding:10px 0;
+    text-align: right;
+}
+
+.social-label{
+    color: #ed1c24;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.social-media{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.fa-brands,.fa-solids,.fa-regular{
+  padding: 10px;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "Font Awesome 6 Brands" !important;
+}
+
+.fa-brands:hover {
+  opacity: 0.7;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+    max-width:900px;
+    display: block;
+    gap: 10px;
+    margin: 0 ;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+}
+.video-wrapper{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem 0;
 }
