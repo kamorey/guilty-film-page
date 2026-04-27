@@ -248,6 +248,7 @@ input[type="radio"]{display: none;}
 .image-wrapper{
     position: relative;
     width: clamp(200px,30vw,400px);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
 }
 
 .image{
@@ -343,4 +344,12 @@ input[type="radio"]{display: none;}
     align-items: center;
     min-height: 100vh;
     padding: 2rem 0;
+}
+
+.poster{
+    box-shadow: 0 0 25px #fdfdfd;
+    margin: auto;
+    width: 500px;
+    height: auto;
+    padding: 10px;
 }
