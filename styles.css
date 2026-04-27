@@ -354,11 +354,21 @@ input[type="radio"]{display: none;}
     padding: 0px;
     gap:10px;
 }
+.poster-block{
+    flex-direction: row-reverse;
+    display: flex;
+    gap:30px;
+    align-items: flex-end;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
 
 .poster-caption{
     font-family: "playfair-display", serif;
     font-size: 15px;
     text-align: center;
-    max-width: 500px;
-    margin: auto;
+    min-width: 250px;
+    margin: 0;
+    line-height: 1.6;
+    flex:1;
 }
