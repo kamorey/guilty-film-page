@@ -414,6 +414,9 @@ input[type="radio"]{display: none;}
     text-align: center;
     color: #fdfdfd;
     align-items: center;
+    line-height: 1.6;
+    flex: 1;
+    min-width: 250px;
 }
 
 .film{
@@ -421,6 +424,6 @@ input[type="radio"]{display: none;}
     width: 100%;
     margin: auto;
     display: block;
-    box-shadow: 0 0 35px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
     align-items: center;
 }
