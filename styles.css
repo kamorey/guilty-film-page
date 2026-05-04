@@ -393,8 +393,11 @@ input[type="radio"]{display: none;}
     display: flex;
     gap:30px;
     align-items: flex-end;
+    justify-content: right;
     padding: 20px 0;
     flex-wrap: wrap;
+    line-height: 1.6;
+    flex: 1;
 }
 
 .poster-caption{
